@@ -1,11 +1,19 @@
 programa { 
 	funcao inicio () {
-		inteiro numerador, denominador
-		escreva("Digite o numerador: ")
+		inteiro numerador, denominador, resto = 0
+	    	escreva("Digite o numerador: ")
 		leia(numerador)
-		escreva("Digite o denominador: ")
-		leia(denominador)
-		se (numerador % denominador == 0) escreva(numerador, " é divisível por ", denominador)
-		senao escreva(numerador," não é dvisível por ", denominador)
+	    	faca {
+	        	escreva("Digite o denominador: ")
+    			leia(denominador)
+    		}enquanto(denominador == 0)
+		se(denominador == 0) {
+		    escreva("Não existe divisão por 0")
+		}
+		senao resto = numerador % denominador
+		se(resto == 0) {
+		    escreva(numerador, " é divisível por ", denominador)
+		}
+		senao escreva(numerador," não é divisível por ", denominador)
 	} 
 }
