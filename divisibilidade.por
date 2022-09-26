@@ -1,4 +1,3 @@
-
 programa { 
 	funcao inicio () {
 		inteiro numerador, denominador
@@ -10,4 +9,3 @@ programa {
 		senao escreva(numerador," não é dvisível por ", denominador)
 	} 
 }
-
